@@ -17,6 +17,8 @@ create table routes(
     endPoint varchar(50) not null,
     duration varchar(15) not null,
     price int not null,
+    availableSeats int not null,
+    remainingSeats int not null,
     
     foreign key (userID) references users(userID) on delete cascade
 );
